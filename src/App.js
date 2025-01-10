@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import RepositoryListPage from "./components/RepositoryListPage";
 import RepositoryDetails from "./components/RepositoryDetails";
 import FollowersPage from "./components/FollowersPage";
+import Navbar from "./components/Navbar";
 import "./index.css";
 
 const App = () => {
@@ -52,6 +53,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <Navbar/>
       {currentView === "home" && (
         <div className="home">
           <h1>GitHub User Finder</h1>
